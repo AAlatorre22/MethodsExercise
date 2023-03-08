@@ -63,41 +63,46 @@ namespace MethodsExercise
         //Start of Exercise 2
            public static void Add()
         {
-            Console.WriteLine("Input the first number to add");
+            Console.WriteLine("We are going to add two numbers together! Please input the first number to add.");
             double firstNum = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Input the second number to add");
+            Console.WriteLine("Please input the second number to add.");
             double secondNum = double.Parse(Console.ReadLine());
+            Console.WriteLine();
 
             double sum = firstNum + secondNum;
-
-            Console.WriteLine(sum);
+            Console.WriteLine($"Your answer is {sum}!");
+            //Console.WriteLine(sum);
         }
 
         public static void Multiply()
         {
-            Console.WriteLine("Input first number to multiply");
+            Console.WriteLine();
+            Console.WriteLine("Now we will do some multiplication! Please input first number to multiply.");
             double firstNum = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Input second number to multiply");
+            Console.WriteLine("Please input second number to multiply.");
             double secondNum = Double.Parse(Console.ReadLine());
+
+            Console.WriteLine();
 
             double product = firstNum * secondNum;
 
-            Console.WriteLine(product);
+            Console.WriteLine($"Your answer is {product}!");
         }
 
         public static void Divide()
         {
-            Console.WriteLine("Input dividend");
+            Console.WriteLine();
+            Console.WriteLine("Lastly we will do some division! Please input dividend.");
             double firstNum = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Input divisor");
+            Console.WriteLine("Please input divisor.");
             double secondNum = double.Parse(Console.ReadLine());
             
             double division = firstNum / secondNum;
 
-            Console.WriteLine(division);
+            Console.WriteLine($"Your answer is {division}!");
         }
         
 
