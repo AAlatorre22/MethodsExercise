@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Drawing;
+using System.Runtime.CompilerServices;
 
 namespace MethodsExercise
 {
@@ -7,9 +8,9 @@ namespace MethodsExercise
     {
         static void Main(string[] args)
         {
-            // Exercise 1
+            //Exercise 1
 
-            //StoryTime();
+            StoryTime();
 
             //Ecercise 2
 
@@ -19,18 +20,19 @@ namespace MethodsExercise
 
             Divide();
 
+            var result = AddAgain(3,6);
+            Console.WriteLine(result);
 
-             
-         
+
         }
 
      //Start of Exercise 1
         public static void StoryTime()
         {
-            Console.WriteLine("What is your name?");
+            Console.WriteLine("Hello! Let's write a story! What is your name?");
             string name = Console.ReadLine();
 
-            Console.WriteLine("What is your favorite candy bar?");
+            Console.WriteLine($"Good day, {name}! What is your favorite candy bar?");
             string candy = Console.ReadLine();
 
             Console.WriteLine("Write an adjective");
@@ -63,6 +65,7 @@ namespace MethodsExercise
         //Start of Exercise 2
            public static void Add()
         {
+            Console.WriteLine();
             Console.WriteLine("We are going to add two numbers together! Please input the first number to add.");
             double firstNum = double.Parse(Console.ReadLine());
 
@@ -72,7 +75,7 @@ namespace MethodsExercise
 
             double sum = firstNum + secondNum;
             Console.WriteLine($"Your answer is {sum}!");
-            //Console.WriteLine(sum);
+            
         }
 
         public static void Multiply()
@@ -103,6 +106,13 @@ namespace MethodsExercise
             double division = firstNum / secondNum;
 
             Console.WriteLine($"Your answer is {division}!");
+        }
+
+        public static int AddAgain(int x, int y)
+        {
+            var result = x + y;
+            return result;
+
         }
         
 
